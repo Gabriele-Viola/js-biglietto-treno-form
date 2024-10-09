@@ -7,18 +7,29 @@
     <title>Calcola il tuo biglietto</title>
 </head>
 <body>
-    <form action="">
-        <label for="travelerName"> Nome e Cognome</label>
-        <input type="text">
-        <label for="km">chilometri da percorrere</label>
-        <input type="number">
-        <label for="age">Età Viaggiatore</label>
-        <select name="age" id="">
-            <option value="">Minore 0 - 17</option>
-            <option value="">Maggiorenne 18+</option>
-            <option value="">Over 65</option>
-        </select>
-    </form>
+    <div>
+
+        <form>
+            <label for="traveler"> Nome e Cognome</label>
+            <input type="text" name="traveler" id="traveler" required>
+            <label for="km">chilometri da percorrere</label>
+            <input type="number" name="km" id="km" required>
+            <label for="age">Età Viaggiatore</label>
+            <select name="age" id="age" required>
+                <option value="standard">Maggiorenne 18+</option>
+                <option value="minore">Minore 0 - 17</option>
+                <option value="over">Over 65</option>
+            </select>
+            <input type="submit">
+        </form>
+    </div>
+    <div class="biglietto .dflex">
+        <h1 class="yourname"></h1>
+        <div class="offerta"></div>
+        <div class="kmPercorsi"></div>
+        <div class="costo"></div>
+
+    </div>
 
 
 
