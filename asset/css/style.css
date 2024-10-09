@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+.d-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.py-1{
+    padding: .5rem 0;
+}
+.row{
+    display: flex;
+    margin: 0 -1rem;
+    flex-wrap: wrap;
+
+}
+
+h1{
+    width: 100%;
+}
+
+.col-4{
+    width: calc( (100% / 12) * 4);
+    padding: 0 1rem;
+
+
+}
+.sending{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    input{
+        border: none;
+        background-color: red;
+        padding: 1rem 2rem;
+        border: 1px solid red;
+        border-radius: 200px;
+        color: white;
+        font-weight: bold;       
+
+    }
+
+}

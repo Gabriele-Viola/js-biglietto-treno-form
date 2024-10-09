@@ -7,21 +7,49 @@
     <title>Calcola il tuo biglietto</title>
 </head>
 <body>
-    <div>
+    <div class="container">
+            <h1>
+                inserisci i dati
+            </h1>
 
-        <form>
-            <label for="traveler"> Nome e Cognome</label>
-            <input type="text" name="traveler" id="traveler" required>
-            <label for="km">chilometri da percorrere</label>
-            <input type="number" name="km" id="km" required>
-            <label for="age">Età Viaggiatore</label>
-            <select name="age" id="age" required>
-                <option value="standard">Maggiorenne 18+</option>
-                <option value="minore">Minore 0 - 17</option>
-                <option value="over">Over 65</option>
-            </select>
-            <input type="submit">
-        </form>
+            <form class="row">
+                <div class="col-4">
+                    <div class="identity">
+                        <div class="first_name">
+                            <label for="travelerLastName" class="d-block py-1">Cognome</label>
+                            <input type="text" name="travelerLastName" id="travelerLastName" required class="d-block">
+
+                        </div>
+                        <div class="last_name">
+                            <label for="travelerFirstName" class="d-block py-1"> Nome</label>
+                            <input type="text" name="travelerFirstName" id="travelerFirstName" required class="d-block">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="supply d-center">
+                        <div class="distance">
+                            <label for="km" class="d-block py-1">Chilometri da percorrere</label>
+                            <input type="number" name="km" id="km" required class="d-block">
+                        </div>
+                        <div class="requet_age">
+                            <label for="age" class="d-block py-1">Età Viaggiatore</label>
+                            <select name="age" id="age" required class="d-block">
+                                <option value="standard">Maggiorenne 18+</option>
+                                <option value="minore">Minore 0 - 17</option>
+                                <option value="over">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-center">
+                    <div class="sending">
+                        <input type="submit">
+                    </div>
+                </div>
+            </form>
+
     </div>
     <div class="biglietto">
 
