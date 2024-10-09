@@ -24,6 +24,16 @@
 .py-1{
     padding: .5rem 0;
 }
+.p2{
+    padding: 1rem;
+}
+.my-4{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.border-radius-botton{
+    border-radius: 0 0 20px 20px;
+}
 .row{
     display: flex;
     margin: 0 -1rem;
@@ -33,28 +43,86 @@
 
 h1{
     width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+.header-card{
+    box-shadow:  0px 0px 5px rgb(0, 0, 0);
+    background-color:palevioletred;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
 .col-4{
     width: calc( (100% / 12) * 4);
     padding: 0 1rem;
-
-
+}
+.col-3{
+    padding: 0 1rem;
+    width: calc( (100% / 12) * 3);
+}
+.col-2{
+    padding: 0 1rem;
+    width: calc( (100% / 12) * 2);
 }
 .sending{
-    width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    div{
+        width: 100%;
+    }
+    .btn{
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 200px;
+        font-weight: bold;       
+        width: 100%;
+        display: block;
+    }
 
     input{
-        border: none;
-        background-color: red;
-        padding: 1rem 2rem;
-        border: 1px solid red;
-        border-radius: 200px;
-        color: white;
-        font-weight: bold;       
+        
+        background-color: white;
+        border: 2px solid white;
+        color: palevioletred;
+    }
+    input:hover{
+        color:rgb(154, 78, 103);
+        background-color: white;
+    }
+    button{
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(65, 65, 65);
+        color: rgb(65, 65, 65);
+    }
+    button:hover{
+        color: rgb(255, 255, 255);
+
+        background-color: rgb(65, 65, 65);
 
     }
 
+}
+.biglietto{
+    height: 150px;
+}
+.sub-info{
+    h3{
+        margin: 1rem 0;        
+    }
+    p{
+        margin: 2rem 0;
+    }
+}
+.card{
+    border-radius: 2rem;
+    border: 2px solid black;
+    box-shadow:  0px 0px 5px rgb(0, 0, 0);
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.bg-pink{
+    background-color: palevioletred;
 }

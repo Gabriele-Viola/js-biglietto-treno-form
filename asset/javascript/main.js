@@ -20,12 +20,42 @@ formEl.addEventListener('submit', function (e) {
     let your_ticket;
 
     let yourData =
-    `<div class="yourdata">        
-    <h1 class="yourname">${travelerLast} ${travelerFirts}</h1>
-        <div class="offerta">${age}</div>
-        <div class="kmPercorsi">${kilometres}</div>
-        <div class="price">${calcTicket(kilometres,age)}</div>
-        </div>
+    `                <div class="yourdata row ">
+                    <div class="col-3">
+                        <div class="sub-info">
+                            <h3> Cognome e Nome</h3>
+                            <p class="yourname">${travelerLast} ${travelerFirts}</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="sub-info">
+                            <h3>Tipologia offerta</h3>
+                            <div class="offerta">${age}</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="sub-info">
+                            <h3>Carrozza</h3>
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="sub-info">
+                            <h3>Codice CP</h3>
+                            <p>9483</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="sub-info">
+                            <h3>Costo biglietto</h3>
+                            <div class="price"> € ${calcTicket(kilometres,age)}</div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
         `
     
     bigliettoel.insertAdjacentHTML('beforeend', yourData)
