@@ -1,6 +1,6 @@
 const formEl = document.querySelector('form')
-const bigliettoel = document.querySelector('biglietto')
-console.log(formEl);
+const bigliettoel = document.querySelector('.biglietto')
+console.log(bigliettoel);
 
 
 formEl.addEventListener('submit', function (e) {
@@ -18,24 +18,25 @@ formEl.addEventListener('submit', function (e) {
     let your_ticket;
 
     const yourData =
-    `        <h1 class="yourname">${travelerName}</h1>
+    `<div class="yourdata">        
+    <h1 class="yourname">${travelerName}</h1>
         <div class="offerta">${age}</div>
         <div class="kmPercorsi">${kilometres}</div>
-        <div class="costo">${your_ticket}</div>
+        </div>
         `
 
     bigliettoel.insertAdjacentElement('beforeend', yourData)
 
-    if (age >= 18 && age < 65) {
-        your_ticket = kilometres * under_18
+    // if (age >= 18 && age < 65) {
+    //     your_ticket = kilometres * under_18
         
-    } else if (age < 18) {
-        your_ticket = kilometres * price_at_kilometres
+    // } else if (age < 18) {
+    //     your_ticket = kilometres * price_at_kilometres
 
-    } else {
-        your_ticket = kilometres * over_65
-    }
-    console.log(message);
+    // } else {
+    //     your_ticket = kilometres * over_65
+    // }
+    // console.log(message);
 
 
 
