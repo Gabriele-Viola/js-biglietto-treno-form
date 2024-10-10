@@ -88,13 +88,13 @@ h1{
         color: palevioletred;
     }
     input:hover{
-        color:rgb(154, 78, 103);
-        background-color: white;
+        color:white;
+        background-color: rgb(154, 78, 103);
     }
     button{
-        background-color: rgb(255, 255, 255);
-        border: 2px solid rgb(65, 65, 65);
-        color: rgb(65, 65, 65);
+        background-color: rgb(154, 78, 103);
+        border: 2px solid white;
+        color: white;
     }
     button:hover{
         color: rgb(255, 255, 255);
@@ -117,7 +117,6 @@ h1{
 }
 .card{
     border-radius: 2rem;
-    border: 2px solid black;
     box-shadow:  0px 0px 5px rgb(0, 0, 0);
     background-color: white;
     padding: 1rem;
